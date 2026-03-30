@@ -1,13 +1,4 @@
-#  _    _                     _             _____ _    _ _____ 
-# | |  | |                   | |           / ____| |  | |_   _|
-# | |  | |_ __   __ _ _ __ __| | ___ _ __ | |  __| |  | | | |  
-# | |  | | '_ \ / _` | '__/ _` |/ _ \ '_ \| | |_ | |  | | | |  
-# | |__| | |_) | (_| | | | (_| |  __/ | | | |__| | |__| |_| |_ 
-#  \____/| .__/ \__,_|_|  \__,_|\___|_| |_|\_____|\____/|_____|
-#        | |                                                      
-#        |_|                                                      
-#
-# ProjectKittyThemes
+# PROJECT KITTY THEMES
 
 [![Themes](https://img.shields.io/badge/7-Themes-ff6b6b?style=flat-square)](themes)
 [![Terminals](https://img.shields.io/badge/4-Termemes-4ecdc4?style=flat-square)]()
@@ -138,6 +129,7 @@ chmod +x install.sh
 - [Open an Issue](https://github.com/zenithopensourceprojects/projectkittythemes/issues)
 
 ---
+<<<<<<< HEAD
 
 ## Contributing
 
@@ -148,3 +140,5 @@ Want to add a new theme? See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 MIT License - Free to use, modify, and share.
+=======
+>>>>>>> 09a9099427a507d57ae408c35d12e0a60d42da3d
