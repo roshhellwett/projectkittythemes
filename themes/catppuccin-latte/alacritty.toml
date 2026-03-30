@@ -1,0 +1,36 @@
+# ===========================
+# Catppuccin Latte — Alacritty
+# ProjectKittyThemes
+# ===========================
+
+[colors.primary]
+background = "#eff1f5"
+foreground = "#4c4f69"
+
+[colors.cursor]
+cursor = "#d20f39"
+text   = "#eff1f5"
+
+[colors.selection]
+background = "#d20f3940"
+text       = "#4c4f69"
+
+[colors.normal]
+black   = "#6c6f85"
+red     = "#d20f39"
+green   = "#40a02b"
+yellow  = "#df8e1d"
+blue    = "#7287fd"
+magenta = "#8839ef"
+cyan    = "#179299"
+white   = "#bcc0cc"
+
+[colors.bright]
+black   = "#9ca0b0"
+red     = "#d20f39"
+green   = "#40a02b"
+yellow  = "#df8e1d"
+blue    = "#7287fd"
+magenta = "#8839ef"
+cyan    = "#179299"
+white   = "#ccd0da"

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectKittyThemes - Terminal Theme Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #0d0d0d;
+            --bg-card: #151515;
+            --bg-card-hover: #1a1a1a;
+            --text: #e0e0e0;
+            --text-muted: #888;
+            --border: #2a2a2a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header .tagline {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #fff;
+            color: var(--bg);
+            border-color: #fff;
+        }
+
+        .theme-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .theme-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .theme-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-color: #444;
+        }
+
+        .theme-card-header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .theme-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .theme-author {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .category-badge {
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .category-dark { background: #3b82f6; color: #fff; }
+        .category-pastel { background: #ec4899; color: #fff; }
+        .category-high-contrast { background: #10b981; color: #fff; }
+
+        .palette-strip {
+            display: flex;
+            height: 50px;
+        }
+
+        .palette-color {
+            flex: 1;
+            transition: flex 0.3s;
+        }
+
+        .palette-color:hover {
+            flex: 2;
+        }
+
+        .theme-card-body {
+            padding: 20px;
+        }
+
+        .terminal-badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .terminal-badge {
+            background: var(--bg);
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+        }
+
+        .install-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: opacity 0.3s;
+        }
+
+        .install-btn:hover {
+            opacity: 0.9;
+        }
+
+        .install-btn.copied {
+            background: #10b981;
+        }
+
+        .expanded-info {
+            display: none;
+            padding: 20px;
+            border-top: 1px solid var(--border);
+            background: var(--bg);
+        }
+
+        .theme-card.expanded .expanded-info {
+            display: block;
+        }
+
+        .color-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+        }
+
+        .color-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+        }
+
+        .color-swatch {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+
+        .color-hex {
+            font-family: monospace;
+            color: var(--text-muted);
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .theme-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .filter-bar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .filter-btn {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ProjectKittyThemes</h1>
+            <p class="tagline">A curated collection of beautiful terminal color schemes</p>
+        </header>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="dark">Dark</button>
+            <button class="filter-btn" data-filter="pastel">Pastel</button>
+            <button class="filter-btn" data-filter="high-contrast">High-Contrast</button>
+        </div>
+
+        <div class="theme-grid" id="themeGrid"></div>
+    </div>
+
+    <footer>
+        <p>
+            Made with love for terminal enthusiasts<br>
+            <a href="https://github.com/zenithopensourceprojects/projectkittythemes" target="_blank">View on GitHub</a>
+        </p>
+    </footer>
+
+    <script>
+        const themes = [
+            {
+                name: "Tokyo Night",
+                slug: "tokyonight",
+                author: "enkia",
+                category: "dark",
+                terminals: ["Kitty", "Alacritty", "WezTerm", "WT"],
+                colors: ["#15161e", "#f7768e", "#9ece6a", "#e0af68", "#7aa2f7", "#bb9af7", "#7dcfff", "#a9b1d6", "#414868", "#f7768e", "#9ece6a", "#e0af68", "#7aa2f7", "#bb9af7", "#7dcfff", "#c0caf5"]
+            },
+            {
+                name: "Catppuccin Mocha",
+                slug: "catppuccin-mocha",
+                author: "catppuccin",
+                category: "dark",
+                terminals: ["Kitty", "Alacritty", "WezTerm", "WT"],
+                colors: ["#45475a", "#f38ba8", "#a6e3a1", "#f9e2af", "#89b4fa", "#cba6f7", "#94e2d5", "#bac2de", "#585b70", "#f38ba8", "#a6e3a1", "#f9e2af", "#89b4fa", "#cba6f7", "#94e2d5", "#a6adc8"]
+            },
+            {
+                name: "Catppuccin Latte",
+                slug: "catppuccin-latte",
+                author: "catppuccin",
+                category: "pastel",
+                terminals: ["Kitty", "Alacritty", "WezTerm", "WT"],
+                colors: ["#6c6f85", "#d20f39", "#40a02b", "#df8e1d", "#7287fd", "#8839ef", "#179299", "#bcc0cc", "#9ca0b0", "#d20f39", "#40a02b", "#df8e1d", "#7287fd", "#8839ef", "#179299", "#ccd0da"]
+            },
+            {
+                name: "Gruvbox Dark",
+                slug: "gruvbox-dark",
+                author: "morhetz",
+                category: "dark",
+                terminals: ["Kitty", "Alacritty", "WezTerm", "WT"],
+                colors: ["#282828", "#cc241d", "#98971a", "#d79921", "#458588", "#b16286", "#689d6a", "#a89984", "#928374", "#fb4934", "#b8bb26", "#fabd2f", "#83a598", "#d3869b", "#8ec07c", "#ebdbb2"]
+            },
+            {
+                name: "Rose Pine",
+                slug: "rose-pine",
+                author: "rose-pine",
+                category: "pastel",
+                terminals: ["Kitty", "Alacritty", "WezTerm", "WT"],
+                colors: ["#26233a", "#eb6f92", "#9ccfd8", "#f6c177", "#31748f", "#c4a7e7", "#9ccfd8", "#e0def4", "#524f67", "#eb6f92", "#9ccfd8", "#f6c177", "#31748f", "#c4a7e7", "#9ccfd8", "#f2f0eb"]
+            },
+            {
+                name: "Nord",
+                slug: "nord",
+                author: "arcticicestudio",
+                category: "high-contrast",
+                terminals: ["Kitty", "Alacritty", "WezTerm", "WT"],
+                colors: ["#3b4252", "#bf616a", "#a3be8c", "#ebcb8b", "#81a1c1", "#b48ead", "#8fbcbb", "#e5e9f0", "#4c566a", "#bf616a", "#a3be8c", "#ebcb8b", "#81a1c1", "#b48ead", "#8fbcbb", "#eceff4"]
+            },
+            {
+                name: "Solarized Dark",
+                slug: "solarized-dark",
+                author: "altercation",
+                category: "high-contrast",
+                terminals: ["Kitty", "Alacritty", "WezTerm", "WT"],
+                colors: ["#073642", "#dc322f", "#859900", "#b58900", "#268bd2", "#d33682", "#2aa198", "#eee8d5", "#586e75", "#cb4b16", "#586e75", "#657b83", "#839496", "#6c71c4", "#93a1a1", "#fdf6e3"]
+            }
+        ];
+
+        const colorNames = [
+            "Black", "Red", "Green", "Yellow", "Blue", "Magenta", "Cyan", "White",
+            "Bright Black", "Bright Red", "Bright Green", "Bright Yellow",
+            "Bright Blue", "Bright Magenta", "Bright Cyan", "Bright White"
+        ];
+
+        const installCommands = {
+            "bash": "bash <(curl -s https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/scripts/install.sh) --theme [slug]",
+            "powershell": "irm https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/scripts/install.ps1 | iex; Install-PKTheme -Theme [slug]"
+        };
+
+        function createThemeCard(theme) {
+            const card = document.createElement("div");
+            card.className = "theme-card";
+            card.dataset.category = theme.category;
+
+            const paletteHTML = theme.colors.map(color => 
+                `<div class="palette-color" style="background-color: ${color}"></div>`
+            ).join("");
+
+            const badgesHTML = theme.terminals.map(t => 
+                `<span class="terminal-badge">${t}</span>`
+            ).join("");
+
+            const colorListHTML = theme.colors.map((color, i) => `
+                <div class="color-item">
+                    <div class="color-swatch" style="background-color: ${color}"></div>
+                    <span class="color-hex">${colorNames[i]}: ${color}</span>
+                </div>
+            `).join("");
+
+            card.innerHTML = `
+                <div class="theme-card-header">
+                    <div>
+                        <div class="theme-name">${theme.name}</div>
+                        <div class="theme-author">by ${theme.author}</div>
+                    </div>
+                    <span class="category-badge category-${theme.category}">${theme.category.replace("-", " ")}</span>
+                </div>
+                <div class="palette-strip">${paletteHTML}</div>
+                <div class="theme-card-body">
+                    <div class="terminal-badges">${badgesHTML}</div>
+                    <button class="install-btn" data-slug="${theme.slug}">Copy Install Command</button>
+                </div>
+                <div class="expanded-info">
+                    <div class="color-list">${colorListHTML}</div>
+                </div>
+            `;
+
+            card.addEventListener("click", (e) => {
+                if (!e.target.classList.contains("install-btn")) {
+                    card.classList.toggle("expanded");
+                }
+            });
+
+            return card;
+        }
+
+        function init() {
+            const grid = document.getElementById("themeGrid");
+            const filterBtns = document.querySelectorAll(".filter-btn");
+
+            themes.forEach(theme => {
+                grid.appendChild(createThemeCard(theme));
+            });
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    filterBtns.forEach(b => b.classList.remove("active"));
+                    btn.classList.add("active");
+
+                    const filter = btn.dataset.filter;
+                    const cards = grid.querySelectorAll(".theme-card");
+
+                    cards.forEach(card => {
+                        if (filter === "all" || card.dataset.category === filter) {
+                            card.style.display = "block";
+                        } else {
+                            card.style.display = "none";
+                        }
+                    });
+                });
+            });
+
+            document.addEventListener("click", async (e) => {
+                if (e.target.classList.contains("install-btn")) {
+                    const slug = e.target.dataset.slug;
+                    const command = `bash <(curl -s https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/scripts/install.sh) --theme ${slug}`;
+                    
+                    try {
+                        await navigator.clipboard.writeText(command);
+                        e.target.textContent = "Copied!";
+                        e.target.classList.add("copied");
+                        setTimeout(() => {
+                            e.target.textContent = "Copy Install Command";
+                            e.target.classList.remove("copied");
+                        }, 2000);
+                    } catch (err) {
+                        e.target.textContent = "Copy failed";
+                        setTimeout(() => {
+                            e.target.textContent = "Copy Install Command";
+                        }, 2000);
+                    }
+                }
+            });
+        }
+
+        init();
+    </script>
+</body>
+</html>

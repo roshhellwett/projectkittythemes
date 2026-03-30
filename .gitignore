@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Build artifacts
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+
+# OS specific
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
