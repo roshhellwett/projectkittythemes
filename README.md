@@ -122,23 +122,4 @@ chmod +x install.sh
 2. For Windows Terminal: open a NEW tab
 3. Make sure only ONE theme is installed at a time
 
-### Need more help?
-
-- [Windows Installation Guide](windows/README.md)
-- [Linux/macOS Installation Guide](linux/README.md)
-- [Open an Issue](https://github.com/zenithopensourceprojects/projectkittythemes/issues)
-
 ---
-<<<<<<< HEAD
-
-## Contributing
-
-Want to add a new theme? See [CONTRIBUTING.md](CONTRIBUTING.md).
-
----
-
-## License
-
-MIT License - Free to use, modify, and share.
-=======
->>>>>>> 09a9099427a507d57ae408c35d12e0a60d42da3d
