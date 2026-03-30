@@ -1,13 +1,4 @@
-#  _    _                     _             _____ _    _ _____ 
-# | |  | |                   | |           / ____| |  | |_   _|
-# | |  | |_ __   __ _ _ __ __| | ___ _ __ | |  __| |  | | | |  
-# | |  | | '_ \ / _` | '__/ _` |/ _ \ '_ \| | |_ | |  | | | |  
-# | |__| | |_) | (_| | | | (_| |  __/ | | | |__| | |__| |_| |_ 
-#  \____/| .__/ \__,_|_|  \__,_|\___|_| |_|\_____|\____/|_____|
-#        | |                                                      
-#        |_|                                                      
-#
-# ProjectKittyThemes
+# PROJECT KITTY THEMES
 
 [![Themes](https://img.shields.io/badge/7-Themes-ff6b6b?style=flat-square)](themes)
 [![Terminals](https://img.shields.io/badge/4-Terminals-4ecdc4?style=flat-square)]()
@@ -111,11 +102,3 @@ projectkittythemes/
 ```
 
 ---
-
-## Contributing
-
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to add new themes.
-
-## License
-
-MIT License - See [LICENSE](LICENSE) for details.
