@@ -128,6 +128,7 @@ chmod +x install.sh
 2. For Windows Terminal: open a NEW tab
 3. Make sure only ONE theme is installed at a time
 
+<<<<<<< HEAD
 ### Need more help?
 
 - [Windows Installation Guide](windows/README.md)
@@ -144,3 +145,6 @@ Want to add a new theme? See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 MIT License - Free to use, modify, and share.
+=======
+---
+>>>>>>> 91ebccbd9dbdcb732af96eabdaf54f04c8315c30
