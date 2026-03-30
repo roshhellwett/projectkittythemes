@@ -10,9 +10,15 @@ Beautiful color themes for your terminal. Transform your terminal from boring de
 
 ## 🎨 Preview Themes
 
-[Open Web Gallery →](web/index.html)
+### Option 1 - Web Gallery (Best for browsing)
 
-Or see all themes below:
+1. Open `web/index.html` in your browser (double-click the file)
+2. Click on any theme card to see all 16 colors
+3. Click "Copy Install Command" to copy the install command
+
+### Option 2 - This README
+
+See all themes below:
 
 | Theme | Look | Best For |
 |-------|------|----------|
@@ -127,9 +133,7 @@ chmod +x install.sh
 - [Windows Installation Guide](windows/README.md)
 - [Linux/macOS Installation Guide](linux/README.md)
 - [Open an Issue](https://github.com/zenithopensourceprojects/projectkittythemes/issues)
-
 ---
-<<<<<<< HEAD
 
 ## Contributing
 
@@ -140,5 +144,3 @@ Want to add a new theme? See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 MIT License - Free to use, modify, and share.
-=======
->>>>>>> 09a9099427a507d57ae408c35d12e0a60d42da3d
