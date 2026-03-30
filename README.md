@@ -8,7 +8,7 @@ Beautiful color themes for your terminal. Transform your terminal from boring de
 
 ---
 
-## 🎨 Preview Themes
+## Preview Themes
 
 ### Option 1 - Web Gallery (Best for browsing)
 
@@ -32,7 +32,7 @@ See all themes below:
 
 ---
 
-## ⚡ Quick Install (Copy & Paste)
+## Quick Install (Copy & Paste)
 
 ### Windows
 
@@ -54,7 +54,7 @@ bash <(curl -s https://raw.githubusercontent.com/zenithopensourceprojects/projec
 
 ---
 
-## 🤔 Need Help?
+## Need Help?
 
 ### "I don't know what terminal I use"
 
@@ -110,7 +110,7 @@ That's it! 🎉
 
 ## Troubleshooting
 
-### "Command not found" or "Permission denied"
+##### ----> "Command not found" or "Permission denied" <----
 
 **Windows:**
 ```powershell
@@ -122,29 +122,4 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 chmod +x install.sh
 ```
 
-### "My terminal still looks the same"
-
-1. **Restart your terminal completely** (close all windows)
-2. For Windows Terminal: open a NEW tab
-3. Make sure only ONE theme is installed at a time
-
-<<<<<<< HEAD
-### Need more help?
-
-- [Windows Installation Guide](windows/README.md)
-- [Linux/macOS Installation Guide](linux/README.md)
-- [Open an Issue](https://github.com/zenithopensourceprojects/projectkittythemes/issues)
 ---
-
-## Contributing
-
-Want to add a new theme? See [CONTRIBUTING.md](CONTRIBUTING.md).
-
----
-
-## License
-
-MIT License - Free to use, modify, and share.
-=======
----
->>>>>>> 91ebccbd9dbdcb732af96eabdaf54f04c8315c30
