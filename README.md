@@ -10,13 +10,13 @@ Beautiful color themes for your terminal. Transform your terminal from boring de
 
 ## Preview Themes
 
-### Option 1 - Web Gallery (Best for browsing)
+### Web Gallery (Best for browsing)
 
 1. Open `web/index.html` in your browser (double-click the file)
 2. Click on any theme card to see all 16 colors
 3. Click "Copy Install Command" to copy the install command
 
-### Option 2 - This README
+### Full Installation
 
 See all themes below:
 
@@ -123,3 +123,5 @@ chmod +x install.sh
 ```
 
 ---
+
+© 2026 [Zenith Open Source Projects](https://zenithopensourceprojects.vercel.app/). All Rights Reserved. Zenith is a Open Source Project Idea's by @roshhellwett
