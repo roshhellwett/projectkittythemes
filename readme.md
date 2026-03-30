@@ -6,6 +6,8 @@
 
 Beautiful color themes for your terminal. Transform your terminal from boring default colors to something you'll love.
 
+![SAMPLE](https://github.com/roshhellwett/projectkittythemes/blob/dbaae069ba9f29a86b538aaa41c65d1d5fd56a68/sample/sample.png)
+
 ---
 
 ## Preview Themes
