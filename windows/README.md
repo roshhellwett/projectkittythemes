@@ -16,7 +16,7 @@ irm https://raw.githubusercontent.com/zenithopensourceprojects/projectkittytheme
 
 ### Option 2 - GUI App
 
-1. Download `ProjectKittyThemes-Manager.exe` from this folder
+1. Download `ProjectKittyThemes.exe` from this folder
 2. Double-click to run
 3. Follow the on-screen instructions
 

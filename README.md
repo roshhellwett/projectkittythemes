@@ -43,7 +43,7 @@ irm https://raw.githubusercontent.com/zenithopensourceprojects/projectkittytheme
 
 **Option 2** - Download the app:
 - Go to [`windows/`](windows/) folder
-- Download `ProjectKittyThemes-Manager.exe`
+- Download `ProjectKittyThemes.exe`
 - Double-click to run
 
 ### Linux / macOS
