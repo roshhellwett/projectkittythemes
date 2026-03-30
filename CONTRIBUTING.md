@@ -21,7 +21,7 @@ Each theme must include these files:
 - [ ] `alacritty.toml` - Alacritty config
 - [ ] `wezterm.lua` - WezTerm config
 - [ ] `windows-terminal.json` - Windows Terminal config
-- [ ] `palette.svg` - Visual palette preview (generated via `scripts/preview.sh`)
+- [ ] `palette.svg` - Visual palette preview (generated via `linux/preview.sh`)
 
 ### Step 3: Create theme.json
 
@@ -78,7 +78,7 @@ Use the exact format specified in the repository. See existing themes for refere
 Run the preview script to generate the palette image:
 
 ```bash
-bash scripts/preview.sh
+bash linux/preview.sh
 ```
 
 ### Step 6: Update Category Files

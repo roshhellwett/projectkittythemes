@@ -1,179 +1,121 @@
 # Linux & macOS Installation Guide
 
-Welcome! Choose your preferred installation method:
+Transform your terminal with beautiful color themes in just minutes.
 
-## Option 1: Quick Install (Recommended) 🚀
+---
 
-### One-Line Install
+## ⚡ Quick Install
+
+Open your terminal (bash/zsh) and paste this:
+
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/linux/install.sh)
 ```
 
-### Interactive Mode
-```bash
-git clone https://github.com/zenithopensourceprojects/projectkittythemes.git
-cd projectkittythemes
-cd linux
-bash install.sh
-```
+That's it! Follow the simple prompts to select your terminal and theme.
 
 ---
 
-## Option 2: Manual Installation
+## What Terminal Do I Have?
 
-### Clone the Repository
+Not sure? Run this:
+
 ```bash
-git clone https://github.com/zenithopensourceprojects/projectkittythemes.git
-cd projectkittythemes
+echo $TERM_PROGRAM
 ```
 
-### Run the Install Script
-```bash
-bash scripts/install.sh
-```
+Common results:
+- `Apple_Terminal` → macOS Terminal
+- `iTerm.app` → iTerm2
+- `vscode` → VS Code Terminal
+- `kitty` → Kitty
+- `wezterm` → WezTerm
 
 ---
 
-## Available Commands
+## How to Use
+
+### Interactive Mode (Recommended)
+1. Run the install command
+2. Select your terminal (1-4)
+3. Select theme category (1-4)
+4. Choose a theme (1-7)
+5. Confirm with Y
+
+### Direct Install (No Questions)
+```bash
+# Install Tokyo Night for Kitty
+bash <(curl -s https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/linux/install.sh) --terminal kitty --theme tokyonight
+
+# Install Nord for Alacritty
+bash <(curl -s https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/linux/install.sh) --terminal alacritty --theme nord
+```
+
+### Available Themes
+| Theme | Look | Best For |
+|-------|------|----------|
+| `tokyonight` | Blue & purple | Late-night coding |
+| `catppuccin-mocha` | Purple & pink | Cozy setup |
+| `catppuccin-latte` | Light pastel | Daytime use |
+| `gruvbox-dark` | Warm browns | Retro feel |
+| `rose-pine` | Soft pink/purple | Aesthetic |
+| `nord` | Cool blue | Clean look |
+| `solarized-dark` | Classic | Easy on eyes |
 
 ### List All Themes
 ```bash
-bash install.sh --list
+bash linux/install.sh --list
 ```
 
-### Preview Colors in Terminal
+### Preview Colors
 ```bash
-bash install.sh --preview
-```
-
-### Install a Theme
-```bash
-# Interactive (prompts for terminal and theme)
-bash install.sh
-
-# Direct install (no prompts)
-bash install.sh --terminal kitty --theme tokyonight
+bash linux/install.sh --preview
 ```
 
 ---
 
-## Supported Terminals (Linux/macOS)
+## Supported Terminals
 
-| Terminal | Config Location | Status |
-|----------|----------------|--------|
-| Kitty | `~/.config/kitty/kitty.conf` | ✅ Full Support |
-| Alacritty | `~/.config/alacritty/alacritty.toml` | ✅ Full Support |
-| WezTerm | `~/.config/wezterm/theme.lua` | ✅ Full Support |
+| Terminal | Config Location |
+|----------|-----------------|
+| Kitty | `~/.config/kitty/kitty.conf` |
+| Alacritty | `~/.config/alacritty/alacritty.toml` |
+| WezTerm | `~/.config/wezterm/wezterm.lua` |
 
-> **Note:** Windows Terminal configs are not supported on Linux/macOS
-
----
-
-## Available Themes
-
-| Theme | Category | Description |
-|-------|----------|-------------|
-| Tokyo Night | Dark | Blue-toned, neon accents |
-| Catppuccin Mocha | Dark | Purple-toned, warm pinks |
-| Catppuccin Latte | Pastel | Light mode, soft pastels |
-| Gruvbox Dark | Dark | Warm, retro aesthetic |
-| Rose Pine | Pastel | Soft pinks and purples |
-| Nord | High-Contrast | Arctic blues, cold tones |
-| Solarized Dark | High-Contrast | Classic, low-blue light |
-
----
-
-## Theme Installation Examples
-
-### Install Tokyo Night for Kitty
-```bash
-bash install.sh --terminal kitty --theme tokyonight
-```
-
-### Install Nord for Alacritty
-```bash
-bash install.sh --terminal alacritty --theme nord
-```
-
-### Install Gruvbox for WezTerm
-```bash
-bash install.sh --terminal wezterm --theme gruvbox-dark
-```
-
----
-
-## Generate Palette SVGs
-
-Creates visual palette images for all themes:
-```bash
-bash preview.sh
-```
-
-Output: `themes/*/palette.svg`
-
----
-
-## Manual Installation
-
-### Kitty
-```bash
-# Copy theme config
-cp themes/tokyonight/kitty.conf ~/.config/kitty/
-
-# Add to kitty.conf
-echo "include kitty.conf" >> ~/.config/kitty/kitty.conf
-```
-
-### Alacritty
-```bash
-# Copy theme config
-cp themes/tokyonight/alacritty.toml ~/.config/alacritty/
-```
-
-### WezTerm
-```bash
-# Copy theme config
-cp themes/tokyonight/wezterm.lua ~/.config/wezterm/theme.lua
-```
+> **Note:** Windows Terminal is not available on Linux/macOS
 
 ---
 
 ## Troubleshooting
 
-### Permission Denied
+### "Permission denied"
 ```bash
 chmod +x install.sh
 ```
 
-### Theme Not Applying
-1. Restart your terminal
-2. Check config path is correct
-3. Verify terminal supports true color
+### "Theme not applying"
+1. Close and reopen your terminal
+2. If using tmux: restart tmux (`tmux kill-server`)
+3. Check your terminal supports true color (`curl -s https://raw.githubusercontent.com/JohnMorales/dotfiles/master/colors/24-bit.sh | bash`)
 
-### Git Not Available
+### "Terminal not found"
+Make sure your terminal is installed:
+- **Kitty**: `sudo apt install kitty` (Ubuntu/Debian) or `brew install kitty` (macOS)
+- **Alacritty**: `sudo apt install alacritty` or `brew install alacritty`
+- **WezTerm**: `brew install wezterm` (macOS) or see [wezfurlong.org](https://wezfurlong.org)
+
+### "Git not available"
 ```bash
 # Download as ZIP
 curl -sL https://github.com/zenithopensourceprojects/projectkittythemes/archive/main.zip -o pkt.zip
 unzip pkt.zip
-cd pkt/main/linux
+cd pkt-main/linux
 bash install.sh
 ```
 
 ---
 
-## Keyboard Shortcuts (Interactive Mode)
+## Need Help?
 
-| Key | Action |
-|-----|--------|
-| 1-4 | Select terminal |
-| 1-4 | Select category |
-| 1-7 | Select theme |
-| y/n | Confirm/Cancel |
-
----
-
-## Requirements
-
-- **Bash** (or compatible shell)
-- **Git** (for cloning) or **curl** (for one-liner)
-- Supported terminal emulator
+- Website: [View all themes](https://github.com/zenithopensourceprojects/projectkittythemes)
+- Issues: [Open a ticket](https://github.com/zenithopensourceprojects/projectkittythemes/issues)

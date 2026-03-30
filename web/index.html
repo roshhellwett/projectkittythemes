@@ -344,8 +344,8 @@
         ];
 
         const installCommands = {
-            "bash": "bash <(curl -s https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/scripts/install.sh) --theme [slug]",
-            "powershell": "irm https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/scripts/install.ps1 | iex; Install-PKTheme -Theme [slug]"
+            "bash": "bash <(curl -s https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/linux/install.sh) --theme [slug]",
+            "powershell": "irm https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/windows/install.ps1 | iex; Install-PKTheme -Theme [slug]"
         };
 
         function createThemeCard(theme) {
@@ -424,7 +424,7 @@
             document.addEventListener("click", async (e) => {
                 if (e.target.classList.contains("install-btn")) {
                     const slug = e.target.dataset.slug;
-                    const command = `bash <(curl -s https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/scripts/install.sh) --theme ${slug}`;
+                    const command = `bash <(curl -s https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/linux/install.sh) --theme ${slug}`;
                     
                     try {
                         await navigator.clipboard.writeText(command);

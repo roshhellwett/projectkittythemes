@@ -10,112 +10,141 @@
 # ProjectKittyThemes
 
 [![Themes](https://img.shields.io/badge/7-Themes-ff6b6b?style=flat-square)](themes)
-[![Terminals](https://img.shields.io/badge/4-Terminals-4ecdc4?style=flat-square)]()
+[![Terminals](https://img.shields.io/badge/4-Termemes-4ecdc4?style=flat-square)]()
 [![License](https://img.shields.io/badge/License-MIT-45b7d1?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/zenithopensourceprojects/projectkittythemes?style=flat-square)]()
 
-A curated collection of beautiful, carefully crafted terminal color schemes for Kitty, Alacritty, WezTerm, and Windows Terminal.
-
----
-
-## Choose Your Platform
-
-### For Windows Users
-📁 **[Go to `windows/` folder](windows/)** - Download `.exe` or use PowerShell script
-
-### For Linux / macOS Users  
-📁 **[Go to `linux/` folder](linux/)** - Use Bash script
+Beautiful color themes for your terminal. Transform your terminal from boring default colors to something you'll love.
 
 ---
 
-## Quick Start
+## 🎨 Preview Themes
+
+[Open Web Gallery →](web/index.html)
+
+Or see all themes below:
+
+| Theme | Look | Best For |
+|-------|------|----------|
+| **Tokyo Night** | Blue & purple, modern | Late-night coding |
+| **Catppuccin Mocha** | Purple & pink, cozy | Catppuccin fans |
+| **Catppuccin Latte** | Light pastel | Daytime use |
+| **Gruvbox Dark** | Warm browns, retro | Retro lovers |
+| **Rosé Pine** | Soft pink & purple | Aesthetic setups |
+| **Nord** | Cool blue, clean | Maximum readability |
+| **Solarized Dark** | Classic, easy on eyes | Long reading sessions |
+
+---
+
+## ⚡ Quick Install (Copy & Paste)
 
 ### Windows
-```powershell
-# Option 1: Download and run the GUI app
-# → windows/ProjectKittyThemes-Manager.exe
 
-# Option 2: PowerShell one-liner
+**Option 1 - Recommended** (PowerShell):
+```powershell
 irm https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/windows/install.ps1 | iex
 ```
 
+**Option 2** - Download the app:
+- Go to [`windows/`](windows/) folder
+- Download `ProjectKittyThemes-Manager.exe`
+- Double-click to run
+
 ### Linux / macOS
+
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/zenithopensourceprojects/projectkittythemes/main/linux/install.sh)
 ```
 
 ---
 
-## Theme Gallery
+## 🤔 Need Help?
 
-| Theme | Category | Kitty | Alacritty | WezTerm | Windows Terminal |
-|-------|----------|:-----:|:---------:|:-------:|:----------------:|
-| Tokyo Night | Dark | ✅ | ✅ | ✅ | ✅ |
-| Catppuccin Mocha | Dark | ✅ | ✅ | ✅ | ✅ |
-| Catppuccin Latte | Pastel | ✅ | ✅ | ✅ | ✅ |
-| Gruvbox Dark | Dark | ✅ | ✅ | ✅ | ✅ |
-| Rosé Pine | Pastel | ✅ | ✅ | ✅ | ✅ |
-| Nord | High-Contrast | ✅ | ✅ | ✅ | ✅ |
-| Solarized Dark | High-Contrast | ✅ | ✅ | ✅ | ✅ |
+### "I don't know what terminal I use"
+
+No problem! Run this command:
+
+**Windows (PowerShell):**
+```powershell
+$env:TERM_PROGRAM
+```
+
+**Linux/macOS:**
+```bash
+echo $TERM_PROGRAM
+```
+
+Still unsure? Just run the installer - it will auto-detect your terminal!
+
+### "What if I pick the wrong theme?"
+
+No worries! The installer creates a backup before making changes. You can:
+- Run the installer again to pick a different theme
+- Delete the backup file to restore your original colors
+
+### "Theme not showing?"
+
+1. Close and reopen your terminal completely
+2. If using Windows Terminal: open a new tab
+3. Still not working? Check our [Troubleshooting Guide](#troubleshooting)
 
 ---
 
-## Available Themes
+## 📖 How It Works
 
-### 🌙 Dark Themes
-- **Tokyo Night** - Blue-toned with neon accents, by enkia
-- **Catppuccin Mocha** - Purple-toned with warm pinks, by Catppuccin
-- **Gruvbox Dark** - Warm retro aesthetic, by morhetz
+1. **Download** - Copy the install command above
+2. **Run** - Paste in your terminal and press Enter
+3. **Select** - Choose your terminal and theme (or let it auto-detect)
+4. **Restart** - Close and reopen your terminal to see the new colors!
 
-### 🌸 Pastel Themes
-- **Catppuccin Latte** - Light mode with soft pastels, by Catppuccin
-- **Rosé Pine** - Soft pinks and purples, by Rosé Pine
-
-### 🔆 High-Contrast Themes
-- **Nord** - Arctic blues and cold tones, by arcticicestudio
-- **Solarized Dark** - Classic low-blue light design, by altercation
+That's it! 🎉
 
 ---
 
-## Project Structure
+## Supported Terminals
 
+| Terminal | Windows | Linux | macOS |
+|----------|---------|-------|-------|
+| Windows Terminal | ✅ | - | - |
+| Kitty | ✅ | ✅ | ✅ |
+| Alacritty | ✅ | ✅ | ✅ |
+| WezTerm | ✅ | ✅ | ✅ |
+
+---
+
+## Troubleshooting
+
+### "Command not found" or "Permission denied"
+
+**Windows:**
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 ```
-projectkittythemes/
-├── windows/                    ← Windows users start here!
-│   ├── ProjectKittyThemes-Manager.exe
-│   ├── install.ps1
-│   ├── README.md
-│   └── theme-manager/
-│
-├── linux/                      ← Linux/Mac users start here!
-│   ├── install.sh
-│   ├── preview.sh
-│   └── README.md
-│
-├── themes/                     ← All theme files (cross-platform)
-│   ├── tokyonight/
-│   ├── catppuccin-mocha/
-│   ├── catppuccin-latte/
-│   ├── gruvbox-dark/
-│   ├── rose-pine/
-│   ├── nord/
-│   └── solarized-dark/
-│
-├── web/                        ← Web gallery preview
-│   └── index.html
-│
-├── categories/                 ← Theme categories
-├── README.md                   ← You are here
-├── CONTRIBUTING.md             ← How to contribute
-└── THEMES.md                   ← Detailed theme info
+
+**Linux/macOS:**
+```bash
+chmod +x install.sh
 ```
+
+### "My terminal still looks the same"
+
+1. **Restart your terminal completely** (close all windows)
+2. For Windows Terminal: open a NEW tab
+3. Make sure only ONE theme is installed at a time
+
+### Need more help?
+
+- [Windows Installation Guide](windows/README.md)
+- [Linux/macOS Installation Guide](linux/README.md)
+- [Open an Issue](https://github.com/zenithopensourceprojects/projectkittythemes/issues)
 
 ---
 
 ## Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to add new themes.
+Want to add a new theme? See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) for details.
+MIT License - Free to use, modify, and share.
