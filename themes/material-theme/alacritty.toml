@@ -1,0 +1,36 @@
+# ===========================
+# Material Theme — Alacritty
+# ProjectKittyThemes
+# ===========================
+
+[colors.primary]
+background = "#263238"
+foreground = "#eceff1"
+
+[colors.cursor]
+cursor = "#eceff1"
+text   = "#263238"
+
+[colors.selection]
+background = "#eceff138"
+text       = "#eceff1"
+
+[colors.normal]
+black   = "#263238"
+red     = "#ef5350"
+green   = "#81c784"
+yellow  = "#ffca28"
+blue    = "#42a5f5"
+magenta = "#ab47bc"
+cyan    = "#26c6da"
+white   = "#eceff1"
+
+[colors.bright]
+black   = "#546e7a"
+red     = "#ef9a9a"
+green   = "#a5d6a7"
+yellow  = "#ffe082"
+blue    = "#90caf9"
+magenta = "#ce93d8"
+cyan    = "#80deea"
+white   = "#ffffff"

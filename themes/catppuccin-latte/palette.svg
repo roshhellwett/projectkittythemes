@@ -2,11 +2,11 @@
 <svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
   <rect width="800" height="200" fill="#1a1a1a"/>
   <rect x="0" y="10" width="100" height="100" fill="#6c6f85"/>
-  <text x="50" y="70" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Black</text>
-  <text x="50" y="85" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#6c6f85</text>
+  <text x="50" y="70" font-family="monospace" font-size="11" fill="black" text-anchor="middle">Black</text>
+  <text x="50" y="85" font-family="monospace" font-size="9" fill="black" text-anchor="middle">#6c6f85</text>
   <rect x="100" y="10" width="100" height="100" fill="#d20f39"/>
-  <text x="150" y="70" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Red</text>
-  <text x="150" y="85" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#d20f39</text>
+  <text x="150" y="70" font-family="monospace" font-size="11" fill="black" text-anchor="middle">Red</text>
+  <text x="150" y="85" font-family="monospace" font-size="9" fill="black" text-anchor="middle">#d20f39</text>
   <rect x="200" y="10" width="100" height="100" fill="#40a02b"/>
   <text x="250" y="70" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Green</text>
   <text x="250" y="85" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#40a02b</text>
@@ -17,20 +17,20 @@
   <text x="450" y="70" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Blue</text>
   <text x="450" y="85" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#7287fd</text>
   <rect x="500" y="10" width="100" height="100" fill="#8839ef"/>
-  <text x="550" y="70" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Magenta</text>
-  <text x="550" y="85" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#8839ef</text>
+  <text x="550" y="70" font-family="monospace" font-size="11" fill="black" text-anchor="middle">Magenta</text>
+  <text x="550" y="85" font-family="monospace" font-size="9" fill="black" text-anchor="middle">#8839ef</text>
   <rect x="600" y="10" width="100" height="100" fill="#179299"/>
-  <text x="650" y="70" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Cyan</text>
-  <text x="650" y="85" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#179299</text>
+  <text x="650" y="70" font-family="monospace" font-size="11" fill="black" text-anchor="middle">Cyan</text>
+  <text x="650" y="85" font-family="monospace" font-size="9" fill="black" text-anchor="middle">#179299</text>
   <rect x="700" y="10" width="100" height="100" fill="#bcc0cc"/>
-  <text x="750" y="70" font-family="monospace" font-size="11" fill="black" text-anchor="middle">White</text>
-  <text x="750" y="85" font-family="monospace" font-size="9" fill="black" text-anchor="middle">#bcc0cc</text>
+  <text x="750" y="70" font-family="monospace" font-size="11" fill="white" text-anchor="middle">White</text>
+  <text x="750" y="85" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#bcc0cc</text>
   <rect x="0" y="110" width="100" height="100" fill="#9ca0b0"/>
   <text x="50" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright Black</text>
   <text x="50" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#9ca0b0</text>
   <rect x="100" y="110" width="100" height="100" fill="#d20f39"/>
-  <text x="150" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright Red</text>
-  <text x="150" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#d20f39</text>
+  <text x="150" y="170" font-family="monospace" font-size="11" fill="black" text-anchor="middle">Bright Red</text>
+  <text x="150" y="185" font-family="monospace" font-size="9" fill="black" text-anchor="middle">#d20f39</text>
   <rect x="200" y="110" width="100" height="100" fill="#40a02b"/>
   <text x="250" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright Green</text>
   <text x="250" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#40a02b</text>
@@ -41,12 +41,12 @@
   <text x="450" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright Blue</text>
   <text x="450" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#7287fd</text>
   <rect x="500" y="110" width="100" height="100" fill="#8839ef"/>
-  <text x="550" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright Magenta</text>
-  <text x="550" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#8839ef</text>
+  <text x="550" y="170" font-family="monospace" font-size="11" fill="black" text-anchor="middle">Bright Magenta</text>
+  <text x="550" y="185" font-family="monospace" font-size="9" fill="black" text-anchor="middle">#8839ef</text>
   <rect x="600" y="110" width="100" height="100" fill="#179299"/>
-  <text x="650" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright Cyan</text>
-  <text x="650" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#179299</text>
+  <text x="650" y="170" font-family="monospace" font-size="11" fill="black" text-anchor="middle">Bright Cyan</text>
+  <text x="650" y="185" font-family="monospace" font-size="9" fill="black" text-anchor="middle">#179299</text>
   <rect x="700" y="110" width="100" height="100" fill="#ccd0da"/>
-  <text x="750" y="170" font-family="monospace" font-size="11" fill="black" text-anchor="middle">Bright White</text>
-  <text x="750" y="185" font-family="monospace" font-size="9" fill="black" text-anchor="middle">#ccd0da</text>
+  <text x="750" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright White</text>
+  <text x="750" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#ccd0da</text>
 </svg>

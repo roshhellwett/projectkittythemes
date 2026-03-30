@@ -21,7 +21,7 @@ show_banner() {
     echo -e "${BOLD}${CYAN}"
     echo "  🐱 ProjectKittyThemes Installer"
     echo -e "${RESET}"
-    echo "  ================================"
+    echo "  ============================"
     echo ""
 }
 

@@ -1,0 +1,32 @@
+{
+  "name": "Material Theme",
+  "slug": "material-theme",
+  "author": "Nate Peterson",
+  "license": "MIT",
+  "category": ["dark"],
+  "tags": ["dark", "material"],
+  "background": "#263238",
+  "foreground": "#eceff1",
+  "accent": "#42a5f5",
+  "cursor": "#eceff1",
+  "selection": "#eceff138",
+  "ansi_colors": {
+    "black": "#263238",
+    "red": "#ef5350",
+    "green": "#81c784",
+    "yellow": "#ffca28",
+    "blue": "#42a5f5",
+    "magenta": "#ab47bc",
+    "cyan": "#26c6da",
+    "white": "#eceff1",
+    "bright_black": "#546e7a",
+    "bright_red": "#ef9a9a",
+    "bright_green": "#a5d6a7",
+    "bright_yellow": "#ffe082",
+    "bright_blue": "#90caf9",
+    "bright_magenta": "#ce93d8",
+    "bright_cyan": "#80deea",
+    "bright_white": "#ffffff"
+  },
+  "terminals": ["kitty", "alacritty", "wezterm", "windows-terminal"]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Palenight",
+  "slug": "palenight",
+  "author": "atom",
+  "license": "MIT",
+  "category": ["dark"],
+  "tags": ["dark", "palenight"],
+  "background": "#1e212b",
+  "foreground": "#abb2bf",
+  "accent": "#61afef",
+  "cursor": "#abb2bf",
+  "selection": "#abb2bf38",
+  "ansi_colors": {
+    "black": "#1e212b",
+    "red": "#e06c75",
+    "green": "#98c379",
+    "yellow": "#e5c07b",
+    "blue": "#61afef",
+    "magenta": "#c678dd",
+    "cyan": "#56b6c2",
+    "white": "#abb2bf",
+    "bright_black": "#5c6370",
+    "bright_red": "#e06c75",
+    "bright_green": "#98c379",
+    "bright_yellow": "#e5c07b",
+    "bright_blue": "#61afef",
+    "bright_magenta": "#c678dd",
+    "bright_cyan": "#56b6c2",
+    "bright_white": "#ffffff"
+  },
+  "terminals": ["kitty", "alacritty", "wezterm", "windows-terminal"]
+}

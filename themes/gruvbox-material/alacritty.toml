@@ -1,0 +1,36 @@
+# ===========================
+# Gruvbox Material — Alacritty
+# ProjectKittyThemes
+# ===========================
+
+[colors.primary]
+background = "#282828"
+foreground = "#ebdbb2"
+
+[colors.cursor]
+cursor = "#ebdbb2"
+text   = "#282828"
+
+[colors.selection]
+background = "#ebdbb238"
+text       = "#ebdbb2"
+
+[colors.normal]
+black   = "#282828"
+red     = "#fb4934"
+green   = "#b8bb26"
+yellow  = "#fabd2f"
+blue    = "#83a598"
+magenta = "#d3869b"
+cyan    = "#8ec07c"
+white   = "#ebdbb2"
+
+[colors.bright]
+black   = "#928374"
+red     = "#fb4934"
+green   = "#b8bb26"
+yellow  = "#fabd2f"
+blue    = "#83a598"
+magenta = "#d3869b"
+cyan    = "#8ec07c"
+white   = "#ffffff"

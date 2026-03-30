@@ -1,7 +1,7 @@
 # PROJECT KITTY THEMES
 
-[![Themes](https://img.shields.io/badge/7-Themes-ff6b6b?style=flat-square)](themes)
-[![Terminals](https://img.shields.io/badge/4-Termemes-4ecdc4?style=flat-square)]()
+[![Themes](https://img.shields.io/badge/18-Themes-ff6b6b?style=flat-square)](themes)
+[![Terminals](https://img.shields.io/badge/4-Terminals-4ecdc4?style=flat-square)]()
 [![License](https://img.shields.io/badge/License-MIT-45b7d1?style=flat-square)](LICENSE)
 
 Beautiful color themes for your terminal. Transform your terminal from boring default colors to something you'll love.
@@ -29,6 +29,17 @@ See all themes below:
 | **Rosé Pine** | Soft pink & purple | Aesthetic setups |
 | **Nord** | Cool blue, clean | Maximum readability |
 | **Solarized Dark** | Classic, easy on eyes | Long reading sessions |
+| **Dracula** | Purple & colorful | Vibrant coding |
+| **One Dark Pro** | Atom-inspired purple | Atom fans |
+| **Monokai Pro** | Classic editor colors | Professional look |
+| **Night Owl** | Blue & orange night | VS Code fans |
+| **Ayu Dark** | Clean orange & blue | Minimalist |
+| **Ayu Light** | Soft pastel light | Daylight use |
+| **Material Theme** | Material Design colors | Android fans |
+| **Gruvbox Material** | Warm refined browns | Refined retro |
+| **Nightball** | Deep blue tones | Night coding |
+| **Iceberg** | Cool blue, deep ocean | Cool aesthetics |
+| **Palenight** | Soft purple editor | Light purple |
 
 ---
 
@@ -110,7 +121,7 @@ That's it! 🎉
 
 ## Troubleshooting
 
-##### ----> "Command not found" or "Permission denied" <----
+### "Command not found" or "Permission denied"
 
 **Windows:**
 ```powershell

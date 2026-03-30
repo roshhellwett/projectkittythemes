@@ -1,0 +1,32 @@
+{
+  "name": "Ayu Dark",
+  "slug": "ayu-dark",
+  "author": "aji",
+  "license": "MIT",
+  "category": ["dark"],
+  "tags": ["dark", "ayu"],
+  "background": "#0a0e14",
+  "foreground": "#b3b1ad",
+  "accent": "#ffb454",
+  "cursor": "#b3b1ad",
+  "selection": "#b3b1ad38",
+  "ansi_colors": {
+    "black": "#0a0e14",
+    "red": "#ff3333",
+    "green": "#87d96c",
+    "yellow": "#ffb454",
+    "blue": "#59c2ff",
+    "magenta": "#c2a3ff",
+    "cyan": "#6ec2fa",
+    "white": "#b3b1ad",
+    "bright_black": "#626a70",
+    "bright_red": "#ff5555",
+    "bright_green": "#85d96c",
+    "bright_yellow": "#ffb86c",
+    "bright_blue": "#59c2ff",
+    "bright_magenta": "#c2a3ff",
+    "bright_cyan": "#7fd962",
+    "bright_white": "#ffffff"
+  },
+  "terminals": ["kitty", "alacritty", "wezterm", "windows-terminal"]
+}

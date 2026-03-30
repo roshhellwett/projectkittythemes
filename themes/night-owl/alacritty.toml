@@ -1,0 +1,36 @@
+# ===========================
+# Night Owl — Alacritty
+# ProjectKittyThemes
+# ===========================
+
+[colors.primary]
+background = "#011627"
+foreground = "#d6deeb"
+
+[colors.cursor]
+cursor = "#d6deeb"
+text   = "#011627"
+
+[colors.selection]
+background = "#d6deeb38"
+text       = "#d6deeb"
+
+[colors.normal]
+black   = "#011627"
+red     = "#ff7b72"
+green   = "#addb67"
+yellow  = "#ecc48d"
+blue    = "#82aaff"
+magenta = "#c792ea"
+cyan    = "#7fd962"
+white   = "#c792ea"
+
+[colors.bright]
+black   = "#637777"
+red     = "#ff7b72"
+green   = "#addb67"
+yellow  = "#ecc48d"
+blue    = "#82aaff"
+magenta = "#c792ea"
+cyan    = "#7fd962"
+white   = "#ffffff"

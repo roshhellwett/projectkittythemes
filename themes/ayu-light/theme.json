@@ -1,0 +1,32 @@
+{
+  "name": "Ayu Light",
+  "slug": "ayu-light",
+  "author": "aji",
+  "license": "MIT",
+  "category": ["pastel"],
+  "tags": ["pastel", "ayu", "light"],
+  "background": "#fafafa",
+  "foreground": "#5c5c5c",
+  "accent": "#c29702",
+  "cursor": "#5c5c5c",
+  "selection": "#5c5c5c38",
+  "ansi_colors": {
+    "black": "#fafafa",
+    "red": "#ff3333",
+    "green": "#86b300",
+    "yellow": "#c29702",
+    "blue": "#0071d1",
+    "magenta": "#7a51d8",
+    "cyan": "#2b7ea3",
+    "white": "#5c5c5c",
+    "bright_black": "#8a8a8a",
+    "bright_red": "#ff5555",
+    "bright_green": "#86b300",
+    "bright_yellow": "#c29702",
+    "bright_blue": "#0071d1",
+    "bright_magenta": "#7a51d8",
+    "bright_cyan": "#2b8282",
+    "bright_white": "#3d3d3d"
+  },
+  "terminals": ["kitty", "alacritty", "wezterm", "windows-terminal"]
+}

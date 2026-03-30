@@ -13,15 +13,27 @@ param(
     [switch]$Help
 )
 
-$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$ProjectRoot = Split-Path $ScriptDir -Parent
-$ThemesDir = Join-Path $ProjectRoot "themes"
+$ScriptDir = $PSScriptRoot
+if (-not $ScriptDir) {
+    try {
+        $ScriptDir = [System.IO.Path]::GetDirectoryName([System.Reflection.Assembly]::GetExecutingAssembly().Location)
+    } catch {}
+}
+if (-not $ScriptDir) {
+    $ScriptDir = Get-Location
+}
+if (Test-Path (Join-Path $ScriptDir "themes")) {
+    $ThemesDir = Join-Path $ScriptDir "themes"
+} else {
+    $ProjectRoot = Split-Path $ScriptDir -Parent
+    $ThemesDir = Join-Path $ProjectRoot "themes"
+}
 
 function Show-Banner {
     Write-Host ""
-    Write-Host "  =============================" -ForegroundColor Cyan
+    Write-Host "  ============================" -ForegroundColor Cyan
     Write-Host "  [=] ProjectKittyThemes [=]" -ForegroundColor Cyan -BackgroundColor DarkBlue
-    Write-Host "  =============================" -ForegroundColor Cyan
+    Write-Host "  ============================" -ForegroundColor Cyan
     Write-Host ""
 }
 
@@ -58,49 +70,11 @@ function Get-Themes {
 }
 
 function Show-List {
+    $themes = Get-Themes
+    
     Write-Host "Available Themes:" -ForegroundColor Yellow
     Write-Host ""
-    Write-Host ([PSCustomObject]@{
-        Theme = "Tokyo Night"
-        Slug = "tokyonight"
-        Category = "dark"
-    } | Format-Table -AutoSize | Out-String)
-    
-    Write-Host ([PSCustomObject]@{
-        Theme = "Catppuccin Mocha"
-        Slug = "catppuccin-mocha"
-        Category = "dark"
-    } | Format-Table -AutoSize | Out-String)
-    
-    Write-Host ([PSCustomObject]@{
-        Theme = "Catppuccin Latte"
-        Slug = "catppuccin-latte"
-        Category = "pastel"
-    } | Format-Table -AutoSize | Out-String)
-    
-    Write-Host ([PSCustomObject]@{
-        Theme = "Gruvbox Dark"
-        Slug = "gruvbox-dark"
-        Category = "dark"
-    } | Format-Table -AutoSize | Out-String)
-    
-    Write-Host ([PSCustomObject]@{
-        Theme = "Rose Pine"
-        Slug = "rose-pine"
-        Category = "pastel"
-    } | Format-Table -AutoSize | Out-String)
-    
-    Write-Host ([PSCustomObject]@{
-        Theme = "Nord"
-        Slug = "nord"
-        Category = "high-contrast"
-    } | Format-Table -AutoSize | Out-String)
-    
-    Write-Host ([PSCustomObject]@{
-        Theme = "Solarized Dark"
-        Slug = "solarized-dark"
-        Category = "high-contrast"
-    } | Format-Table -AutoSize | Out-String)
+    $themes | Format-Table -AutoSize | Out-String | ForEach-Object { Write-Host $_ }
 }
 
 function Show-Preview {
@@ -113,6 +87,7 @@ function Show-Preview {
         Write-Host "  Background: $($content.background)"
         Write-Host "  Foreground: $($content.foreground)"
         
+        $colorNames = @("Black", "Red", "Green", "Yellow", "Blue", "Magenta", "Cyan", "White")
         $colors = @(
             $content.ansi_colors.black,
             $content.ansi_colors.red,
@@ -124,16 +99,9 @@ function Show-Preview {
             $content.ansi_colors.white
         )
         
-        foreach ($color in $colors) {
-            Write-Host -NoNewline "  "
-            $rgb = $color -replace '#', ''
-            $r = [Convert]::ToInt32($rgb.Substring(0, 2), 16)
-            $g = [Convert]::ToInt32($rgb.Substring(2, 2), 16)
-            $b = [Convert]::ToInt32($rgb.Substring(4, 2), 16)
-            $ansi = 16 + [math]::Floor($r / 51) * 36 + [math]::Floor($g / 51) * 6 + [math]::Floor($b / 51)
-            Write-Host -BackgroundColor $ansi -NoNewline "      "
+        for ($i = 0; $i -lt $colors.Count; $i++) {
+            Write-Host "  $($colorNames[$i]): $($colors[$i])"
         }
-        Write-Host ""
         Write-Host ""
     }
 }

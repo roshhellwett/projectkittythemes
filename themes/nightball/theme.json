@@ -1,0 +1,32 @@
+{
+  "name": "Nightball",
+  "slug": "nightball",
+  "author": "sdras",
+  "license": "MIT",
+  "category": ["dark"],
+  "tags": ["dark", "nightball"],
+  "background": "#1a1b26",
+  "foreground": "#a9b1d6",
+  "accent": "#5e8ce5",
+  "cursor": "#a9b1d6",
+  "selection": "#a9b1d638",
+  "ansi_colors": {
+    "black": "#1a1b26",
+    "red": "#ff5e5e",
+    "green": "#5ece5e",
+    "yellow": "#e5bc5e",
+    "blue": "#5e8ce5",
+    "magenta": "#bc5ecc",
+    "cyan": "#5e9ce5",
+    "white": "#a9b1d6",
+    "bright_black": "#54546e",
+    "bright_red": "#ff7a7a",
+    "bright_green": "#7acf7a",
+    "bright_yellow": "#e5cc7a",
+    "bright_blue": "#7aaaff",
+    "bright_magenta": "#cc7acc",
+    "bright_cyan": "#7aaaff",
+    "bright_white": "#ffffff"
+  },
+  "terminals": ["kitty", "alacritty", "wezterm", "windows-terminal"]
+}

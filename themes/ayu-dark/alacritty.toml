@@ -1,0 +1,36 @@
+# ===========================
+# Ayu Dark — Alacritty
+# ProjectKittyThemes
+# ===========================
+
+[colors.primary]
+background = "#0a0e14"
+foreground = "#b3b1ad"
+
+[colors.cursor]
+cursor = "#b3b1ad"
+text   = "#0a0e14"
+
+[colors.selection]
+background = "#b3b1ad38"
+text       = "#b3b1ad"
+
+[colors.normal]
+black   = "#0a0e14"
+red     = "#ff3333"
+green   = "#87d96c"
+yellow  = "#ffb454"
+blue    = "#59c2ff"
+magenta = "#c2a3ff"
+cyan    = "#6ec2fa"
+white   = "#b3b1ad"
+
+[colors.bright]
+black   = "#626a70"
+red     = "#ff5555"
+green   = "#85d96c"
+yellow  = "#ffb86c"
+blue    = "#59c2ff"
+magenta = "#c2a3ff"
+cyan    = "#7fd962"
+white   = "#ffffff"

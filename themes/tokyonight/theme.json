@@ -28,7 +28,5 @@
     "bright_cyan": "#7dcfff",
     "bright_white": "#c0caf5"
   },
-  "terminals": ["kitty", "alacritty", "wezterm", "windows-terminal"],
-  "preview_image": "preview.png",
-  "palette_image": "palette.png"
+  "terminals": ["kitty", "alacritty", "wezterm", "windows-terminal"]
 }

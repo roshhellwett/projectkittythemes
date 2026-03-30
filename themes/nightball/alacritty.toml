@@ -1,0 +1,36 @@
+# ===========================
+# Nightball — Alacritty
+# ProjectKittyThemes
+# ===========================
+
+[colors.primary]
+background = "#1a1b26"
+foreground = "#a9b1d6"
+
+[colors.cursor]
+cursor = "#a9b1d6"
+text   = "#1a1b26"
+
+[colors.selection]
+background = "#a9b1d638"
+text       = "#a9b1d6"
+
+[colors.normal]
+black   = "#1a1b26"
+red     = "#ff5e5e"
+green   = "#5ece5e"
+yellow  = "#e5bc5e"
+blue    = "#5e8ce5"
+magenta = "#bc5ecc"
+cyan    = "#5e9ce5"
+white   = "#a9b1d6"
+
+[colors.bright]
+black   = "#54546e"
+red     = "#ff7a7a"
+green   = "#7acf7a"
+yellow  = "#e5cc7a"
+blue    = "#7aaaff"
+magenta = "#cc7acc"
+cyan    = "#7aaaff"
+white   = "#ffffff"

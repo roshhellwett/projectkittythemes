@@ -1,0 +1,32 @@
+{
+  "name": "Iceberg",
+  "slug": "iceberg",
+  "author": "cncpl",
+  "license": "MIT",
+  "category": ["dark"],
+  "tags": ["dark", "iceberg"],
+  "background": "#161821",
+  "foreground": "#c8c8c8",
+  "accent": "#7ca5e3",
+  "cursor": "#c8c8c8",
+  "selection": "#c8c8c838",
+  "ansi_colors": {
+    "black": "#161821",
+    "red": "#e27878",
+    "green": "#9ece9a",
+    "yellow": "#e4c46a",
+    "blue": "#7ca5e3",
+    "magenta": "#b87fc4",
+    "cyan": "#74b0c0",
+    "white": "#c8c8c8",
+    "bright_black": "#6e7080",
+    "bright_red": "#e49191",
+    "bright_green": "#b0d09e",
+    "bright_yellow": "#ebd386",
+    "bright_blue": "#94b7e5",
+    "bright_magenta": "#c99ed3",
+    "bright_cyan": "#8fc9cf",
+    "bright_white": "#d8d8d8"
+  },
+  "terminals": ["kitty", "alacritty", "wezterm", "windows-terminal"]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Night Owl",
+  "slug": "night-owl",
+  "author": "sdras",
+  "license": "MIT",
+  "category": ["dark"],
+  "tags": ["dark", "night", "owl"],
+  "background": "#011627",
+  "foreground": "#d6deeb",
+  "accent": "#82aaff",
+  "cursor": "#d6deeb",
+  "selection": "#d6deeb38",
+  "ansi_colors": {
+    "black": "#011627",
+    "red": "#ff7b72",
+    "green": "#addb67",
+    "yellow": "#ecc48d",
+    "blue": "#82aaff",
+    "magenta": "#c792ea",
+    "cyan": "#7fd962",
+    "white": "#c792ea",
+    "bright_black": "#637777",
+    "bright_red": "#ff7b72",
+    "bright_green": "#addb67",
+    "bright_yellow": "#ecc48d",
+    "bright_blue": "#82aaff",
+    "bright_magenta": "#c792ea",
+    "bright_cyan": "#7fd962",
+    "bright_white": "#ffffff"
+  },
+  "terminals": ["kitty", "alacritty", "wezterm", "windows-terminal"]
+}

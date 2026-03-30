@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="200" fill="#1a1a1a"/>
+  <rect x="0" y="10" width="100" height="100" fill="#282828"/>
+  <text x="50" y="70" font-family="monospace" font-size="11" fill="black" text-anchor="middle">Black</text>
+  <text x="50" y="85" font-family="monospace" font-size="9" fill="black" text-anchor="middle">#282828</text>
+  <rect x="100" y="10" width="100" height="100" fill="#fb4934"/>
+  <text x="150" y="70" font-family="monospace" font-size="11" fill="black" text-anchor="middle">Red</text>
+  <text x="150" y="85" font-family="monospace" font-size="9" fill="black" text-anchor="middle">#fb4934</text>
+  <rect x="200" y="10" width="100" height="100" fill="#b8bb26"/>
+  <text x="250" y="70" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Green</text>
+  <text x="250" y="85" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#b8bb26</text>
+  <rect x="300" y="10" width="100" height="100" fill="#fabd2f"/>
+  <text x="350" y="70" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Yellow</text>
+  <text x="350" y="85" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#fabd2f</text>
+  <rect x="400" y="10" width="100" height="100" fill="#83a598"/>
+  <text x="450" y="70" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Blue</text>
+  <text x="450" y="85" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#83a598</text>
+  <rect x="500" y="10" width="100" height="100" fill="#d3869b"/>
+  <text x="550" y="70" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Magenta</text>
+  <text x="550" y="85" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#d3869b</text>
+  <rect x="600" y="10" width="100" height="100" fill="#8ec07c"/>
+  <text x="650" y="70" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Cyan</text>
+  <text x="650" y="85" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#8ec07c</text>
+  <rect x="700" y="10" width="100" height="100" fill="#ebdbb2"/>
+  <text x="750" y="70" font-family="monospace" font-size="11" fill="white" text-anchor="middle">White</text>
+  <text x="750" y="85" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#ebdbb2</text>
+  <rect x="0" y="110" width="100" height="100" fill="#928374"/>
+  <text x="50" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright Black</text>
+  <text x="50" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#928374</text>
+  <rect x="100" y="110" width="100" height="100" fill="#fb4934"/>
+  <text x="150" y="170" font-family="monospace" font-size="11" fill="black" text-anchor="middle">Bright Red</text>
+  <text x="150" y="185" font-family="monospace" font-size="9" fill="black" text-anchor="middle">#fb4934</text>
+  <rect x="200" y="110" width="100" height="100" fill="#b8bb26"/>
+  <text x="250" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright Green</text>
+  <text x="250" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#b8bb26</text>
+  <rect x="300" y="110" width="100" height="100" fill="#fabd2f"/>
+  <text x="350" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright Yellow</text>
+  <text x="350" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#fabd2f</text>
+  <rect x="400" y="110" width="100" height="100" fill="#83a598"/>
+  <text x="450" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright Blue</text>
+  <text x="450" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#83a598</text>
+  <rect x="500" y="110" width="100" height="100" fill="#d3869b"/>
+  <text x="550" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright Magenta</text>
+  <text x="550" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#d3869b</text>
+  <rect x="600" y="110" width="100" height="100" fill="#8ec07c"/>
+  <text x="650" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright Cyan</text>
+  <text x="650" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#8ec07c</text>
+  <rect x="700" y="110" width="100" height="100" fill="#ffffff"/>
+  <text x="750" y="170" font-family="monospace" font-size="11" fill="white" text-anchor="middle">Bright White</text>
+  <text x="750" y="185" font-family="monospace" font-size="9" fill="white" text-anchor="middle">#ffffff</text>
+</svg>

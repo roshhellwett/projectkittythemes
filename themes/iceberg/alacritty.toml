@@ -1,0 +1,36 @@
+# ===========================
+# Iceberg — Alacritty
+# ProjectKittyThemes
+# ===========================
+
+[colors.primary]
+background = "#161821"
+foreground = "#c8c8c8"
+
+[colors.cursor]
+cursor = "#c8c8c8"
+text   = "#161821"
+
+[colors.selection]
+background = "#c8c8c838"
+text       = "#c8c8c8"
+
+[colors.normal]
+black   = "#161821"
+red     = "#e27878"
+green   = "#9ece9a"
+yellow  = "#e4c46a"
+blue    = "#7ca5e3"
+magenta = "#b87fc4"
+cyan    = "#74b0c0"
+white   = "#c8c8c8"
+
+[colors.bright]
+black   = "#6e7080"
+red     = "#e49191"
+green   = "#b0d09e"
+yellow  = "#ebd386"
+blue    = "#94b7e5"
+magenta = "#c99ed3"
+cyan    = "#8fc9cf"
+white   = "#d8d8d8"
