@@ -94,6 +94,6 @@ projectkittythemes/
 - **Issues**: Open a GitHub issue for bugs or features
 - **Discussions**: Use GitHub Discussions for questions
 
-## License
+---
 
-By contributing, you agree that your contributions will be licensed under the MIT License.
+© 2026 [Zenith Open Source Projects](https://zenithopensourceprojects.vercel.app/). All Rights Reserved. Zenith is a Open Source Project Idea's by @roshhellwett
