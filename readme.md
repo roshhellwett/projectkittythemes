@@ -7,7 +7,9 @@
 
 Beautiful color themes for your terminal. Transform your terminal from boring default colors to something you'll love.
 
-![SAMPLE](https://github.com/roshhellwett/projectkittythemes/blob/dbaae069ba9f29a86b538aaa41c65d1d5fd56a68/sample/sample.png)
+![SAMPLE](https://github.com/roshhellwett/projectkittythemes/blob/435fc245e6d9be727592680eda644a1f02f7b05f/sample/samplezero.png)
+
+![SAMPLE](https://github.com/roshhellwett/projectkittythemes/blob/435fc245e6d9be727592680eda644a1f02f7b05f/sample/sampleone.png)
 
 ---
 
@@ -120,23 +122,6 @@ projectkittythemes rollback
 
 ---
 
-## Need Help?
-
-### "Theme not showing?"
-
-1. Close and reopen your terminal completely
-2. If using Windows Terminal: open a new tab
-3. Still not working? Run `projectkittythemes rollback` to restore defaults
-
-### "I don't know what terminal I use"
-
-The app auto-detects your terminal. You can check manually:
-
-- **Windows**: `echo $env:TERM_PROGRAM`
-- **Linux/macOS**: `echo $TERM_PROGRAM`
-
----
-
 ## Troubleshooting
 
 ### "Command not found" or "Permission denied"
@@ -180,13 +165,4 @@ python -m twine upload dist/* -r pypi
 
 ---
 
-## Credits
-
-**Copyright © 2026 Zenith Open Source Projects**  
-**Developer:** roshhellwett
-
----
-
-## License
-
-MIT License - See [LICENSE](LICENSE) for details.
+© 2026 [Zenith Open Source Projects](https://zenithopensourceprojects.vercel.app/). All Rights Reserved. Zenith is a Open Source Project Idea's by @roshhellwett
