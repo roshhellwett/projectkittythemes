@@ -3,7 +3,7 @@
 [![Themes](https://img.shields.io/badge/18-Themes-ff6b6b?style=flat-square)](themes)
 [![Terminals](https://img.shields.io/badge/4-Terminals-4ecdc4?style=flat-square)]()
 [![License](https://img.shields.io/badge/License-MIT-45b7d1?style=flat-square)](LICENSE)
-[![PyPI](https://img.shields.io/badge/PyPI-1.0.2-4ecdc4?style=flat-square)](https://pypi.org/project/projectkittythemes/)
+[![PyPI](https://img.shields.io/badge/PyPI-1.0.3-4ecdc4?style=flat-square)](https://pypi.org/project/projectkittythemes/)
 
 Beautiful color themes for your terminal. Transform your terminal from boring default colors to something you'll love.
 
