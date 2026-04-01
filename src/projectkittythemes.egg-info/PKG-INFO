@@ -1,3 +1,20 @@
+Metadata-Version: 2.4
+Name: projectkittythemes
+Version: 1.0.1
+Summary: Beautiful color themes for your terminal
+Author-email: roshhellwett <roshhellwett@icloud.com>
+License: MIT
+Project-URL: Homepage, https://github.com/zenithopensourceprojects/projectkittythemes
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: license
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Provides-Extra: dependencies
+Requires-Dist: typer[all]>=0.12; extra == "dependencies"
+Requires-Dist: rich>=13; extra == "dependencies"
+Dynamic: license-file
+
 # PROJECT KITTY THEMES
 
 [![Themes](https://img.shields.io/badge/18-Themes-ff6b6b?style=flat-square)](themes)

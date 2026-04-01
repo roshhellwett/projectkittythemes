@@ -1,0 +1,35 @@
+[build-system]
+requires      = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "projectkittythemes"
+version         = "1.0.1"
+description     = "Beautiful color themes for your terminal"
+readme          = "README.md"
+requires-python = ">=3.10"
+license         = { text = "MIT" }
+authors = [
+    { name = "roshhellwett", email = "roshhellwett@icloud.com" },
+]
+
+[project.urls]
+Homepage = "https://github.com/zenithopensourceprojects/projectkittythemes"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+dependencies = [
+    "typer[all]>=0.12",
+    "rich>=13",
+]
+
+[project.scripts]
+projectkittythemes = "projectkittythemes.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["projectkittythemes*"]
+
+[tool.setuptools.package-data]
+projectkittythemes = ["themes/**/*.json", "themes/**/*.conf", "themes/**/*.toml", "themes/**/*.lua", "themes/**/*.svg"]

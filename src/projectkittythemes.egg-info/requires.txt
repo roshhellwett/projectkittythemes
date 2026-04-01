@@ -1,0 +1,7 @@
+
+[dependencies]
+typer[all]>=0.12
+rich>=13
+
+[dev]
+pytest
