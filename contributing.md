@@ -96,8 +96,4 @@ projectkittythemes/
 
 ---
 
-<<<<<<< HEAD
 © 2026 [Zenith Open Source Projects](https://zenithopensourceprojects.vercel.app/). All Rights Reserved. Zenith is a Open Source Project Idea's by @roshhellwett
-=======
-© 2026 [Zenith Open Source Projects](https://zenithopensourceprojects.vercel.app/). All Rights Reserved. Zenith is a Open Source Project Idea's by @roshhellwett
->>>>>>> aeca08f95714e5cdc1a7c4053186187fbccefc1d
