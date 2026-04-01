@@ -2,12 +2,15 @@ import json
 import os
 from pathlib import Path
 from typing import Any
+from functools import lru_cache
 
 _THEMES_DIR = Path(__file__).parent / "themes"
 
+@lru_cache(maxsize=1)
 def get_themes_dir() -> Path:
     return _THEMES_DIR
 
+@lru_cache(maxsize=1)
 def get_all_themes() -> list[dict[str, Any]]:
     themes = []
     if not _THEMES_DIR.exists():
@@ -22,6 +25,7 @@ def get_all_themes() -> list[dict[str, Any]]:
     
     return sorted(themes, key=lambda x: x.get("name", ""))
 
+@lru_cache(maxsize=1)
 def get_theme_by_slug(slug: str) -> dict[str, Any] | None:
     themes = get_all_themes()
     for theme in themes:
@@ -29,10 +33,12 @@ def get_theme_by_slug(slug: str) -> dict[str, Any] | None:
             return theme
     return None
 
+@lru_cache(maxsize=1)
 def get_themes_by_category(category: str) -> list[dict[str, Any]]:
     themes = get_all_themes()
     return [t for t in themes if category in t.get("category", [])]
 
+@lru_cache(maxsize=1)
 def get_categories() -> list[str]:
     categories = set()
     for theme in get_all_themes():

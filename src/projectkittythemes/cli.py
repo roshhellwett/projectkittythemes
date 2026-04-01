@@ -55,6 +55,8 @@ def is_interactive() -> bool:
     return sys.stdin.isatty()
 
 def safe_input(prompt_text: str, default: str = "", allow_empty: bool = True) -> str:
+    if not is_interactive():
+        return default
     try:
         result = input(prompt_text).strip()
         if not result and not allow_empty:
@@ -62,6 +64,13 @@ def safe_input(prompt_text: str, default: str = "", allow_empty: bool = True) ->
         return result
     except (EOFError, KeyboardInterrupt):
         return ""
+
+def pause_for_user() -> None:
+    if is_interactive():
+        try:
+            input("\nPress Enter to continue...")
+        except (EOFError, KeyboardInterrupt):
+            pass
 
 def print_version():
     console.print(f"""
@@ -315,7 +324,7 @@ def handle_browse_themes() -> None:
             "The themes directory appears to be empty",
             "Try updating the project: projectkittythemes update"
         )
-        safe_input("\nPress Enter to continue...")
+        pause_for_user()
         return
     
     while True:
@@ -409,7 +418,7 @@ def handle_install_theme() -> None:
             "The themes database is empty",
             "Update the project and try again"
         )
-        safe_input("\nPress Enter to continue...")
+        pause_for_user()
         return
     
     console.clear()
@@ -434,13 +443,13 @@ def handle_install_theme() -> None:
     
     if not choice.isdigit():
         console.print("[red]Invalid choice. Returning to menu...[/red]")
-        safe_input("\nPress Enter to continue...")
+        pause_for_user()
         return
     
     idx = int(choice) - 1
     if idx < 0 or idx >= len(themes):
         console.print("[red]Invalid choice. Returning to menu...[/red]")
-        safe_input("\nPress Enter to continue...")
+        pause_for_user()
         return
     
     theme = themes[idx]
@@ -462,7 +471,7 @@ def handle_install_theme() -> None:
             "Check if your terminal configuration is valid"
         )
     
-    safe_input("\nPress Enter to continue...")
+    pause_for_user()
 
 def handle_rollback() -> None:
     console.clear()
@@ -485,7 +494,7 @@ def handle_rollback() -> None:
         )
     
     console.print("\n[dim]--- Copyright 2026 Zenith Open Source Projects ---[/dim]")
-    safe_input("\nPress Enter to continue...")
+    pause_for_user()
 
 def handle_update() -> None:
     import subprocess
@@ -587,7 +596,7 @@ def handle_update() -> None:
         )
     
     console.print("\n[dim]--- Copyright 2026 Zenith Open Source Projects ---[/dim]")
-    safe_input("\nPress Enter to continue...")
+    pause_for_user()
 
 def handle_help() -> None:
     console.print(f"""
@@ -619,7 +628,7 @@ def handle_help() -> None:
 
 [dim]--- Copyright 2026 Zenith Open Source Projects | Developer: roshhellwett ---[/dim]
     """)
-    safe_input("\nPress Enter to continue...")
+    pause_for_user()
 
 def main_menu_loop() -> None:
     while True:
@@ -642,7 +651,7 @@ def main_menu_loop() -> None:
                 break
             else:
                 console.print(f"\n[red]Invalid choice '{choice}'. Please enter a number between 1-6.[/red]")
-                safe_input("\nPress Enter to continue...")
+                pause_for_user()
         except KeyboardInterrupt:
             console.print("\n\n[cyan]Goodbye! Thank you for using projectkittythemes![/cyan]")
             console.print("[dim]--- Copyright 2026 Zenith Open Source Projects | Developer: roshhellwett ---[/dim]\n")
@@ -654,7 +663,7 @@ def main_menu_loop() -> None:
                 str(e),
                 "Try restarting the application"
             )
-            safe_input("\nPress Enter to continue...")
+            pause_for_user()
 
 @app.callback()
 def main(
@@ -860,7 +869,7 @@ def categories():
         table.add_row(theme.get("name", ""), theme.get("author", ""))
     
     console.print(table)
-    safe_input("\nPress Enter to continue...")
+    pause_for_user()
 
 if __name__ == "__main__":
     app()
